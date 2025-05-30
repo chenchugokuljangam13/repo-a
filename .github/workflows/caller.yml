@@ -5,7 +5,7 @@ on:
 
 jobs:
   call_external_workflow:
-    uses: henchugokuljangam13/repo-b/.github/workflows/reusable.yml@main
+    uses: chenchugokuljangam13/repo-b/.github/workflows/reusable.yml@main
     with:
       username: "alice"
     secrets:
