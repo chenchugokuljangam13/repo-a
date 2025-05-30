@@ -1,4 +1,5 @@
 # repo-a: .github/workflows/caller.yml
+name: Caller Workflow
 on:
   push:
     branches:
