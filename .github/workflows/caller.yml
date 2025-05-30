@@ -1,0 +1,12 @@
+# repo-a: .github/workflows/caller.yml
+on:
+  push:
+    branches: [main]
+
+jobs:
+  call_external_workflow:
+    uses: org-name/repo-b/.github/workflows/reusable.yml@main
+    with:
+      username: "alice"
+    secrets:
+      MY_SECRET: ${{ secrets.MY_SECRET }}
